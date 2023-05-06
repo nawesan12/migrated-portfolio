@@ -3,25 +3,250 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  font-synthesis: none;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+
+  cursor: crosshair;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+* {
+  margin:0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+*::selection {
+  background: yellow;
+  color: black;
+}
+
+html {
+  scroll-behavior: initial;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+  background: linear-gradient(to top, #ece9e6, #ffffff);
+}
+
+img::selection {
+  background: none;
+}
+
+button {
+  all: unset;
+  display:flex;
+  align-items: center;
+  cursor:pointer;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  font-weight: 500;
+  color: #000;
+  text-decoration: inherit;
+}
+
+h1 {
+  font-size: 3.2em;
+  line-height: 1.1;
+}
+
+.section {
+  padding: 1rem;
+  min-height: 87.5vh;
+}
+
+.rounded {
+  border-radius: 2rem;
+}
+
+header {
+  height: 10vh;
+  
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}
+
+header nav ul {
+  display:flex;
+  gap: 1rem;
+}
+
+
+
+#contact h2 {
+  font-size: 3.5rem;
+}
+
+
+footer {
+  background: #000;
+  color: #fff;
+  min-width: 100%;
+  min-height: 70vh;
+  border-radius: 2rem 2rem 0 0;
+
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+
+
+
+footer header {
+  display: flex;
+  flex-direction: column;
+  margin-block: 10rem;
+}
+
+footer header h4 {
+  font-size: 6rem;
+  font-weight: 500;
+  padding-block: 2rem;
+}
+
+footer div {
+  width:100%;
+  display:flex;
+  justify-content: space-around;
+  margin-block: 5rem;
+}
+
+footer figure img {
+  border-radius: 50%;
+  display:block;
+  margin: 1rem 0;
+  border: 3px solid transparent;
+  transition: all .25s ease;
+}
+
+footer figure img:hover {
+  border: 3px solid #fff;
+  box-shadow: 0 0 .15rem #ccc;
+}
+
+footer figure:hover figcaption {
+  border-bottom: 2px solid #fff;
+  text-shadow: 0 0 .15rem #ccc;
+}
+
+footer figure figcaption {
+  font-size: 1.7rem;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all .25s ease;
+}
+
+footer div nav {
+  display:flex;
+  gap: 4rem;
+}
+
+footer div nav ul {
+  display:flex;
+  flex-direction: column;
+  gap: .75rem;
+}
+
+footer div nav li a {
+  color: white;
+  opacity: .7;
+  font-weight: 400;
+  font-size: 1.25rem;
+  transition: all .1s ease;
+}
+
+footer div nav li a:hover {
+  opacity: 1;
+  text-shadow: 0 0 .15rem #ccc;
+}
+
+footer div nav h5 {
+  font-size: 1.75rem;
+  margin-bottom: 2rem;
+}
+
+footer p {
+  opacity: .7;
+  font-weight: 500;
+  margin-block: 4rem;
+}
+
+footer .divisor {
+  display:block;
+  width:90%;
+  height:2px;
+  background: #333;
+}
+
+.contact-me-button {
+  background: linear-gradient(to top right, #f12711, #f5af19);
+  padding: .75rem 1.25rem;
+  border-radius: 2rem;
+  
+  font-weight: 500;
+  transition: all .2s ease;
+  font-size: 1.1rem;
+}
+
+.contact-me-button span {
+  transition: all .2s ease;
+  padding: .2rem .75rem; 
+  display:flex;
+  align-items: center;
+  gap: 1rem;
+  border-radius: 1rem; 
+}
+
+.contact-me-button svg {
+  stroke: #f5af19;
+  background: #fff;
+  border-radius: 50%;
+  padding: .2rem;
+  transition: all .2s ease;
+}
+
+.contact-me-button:hover span {
+  background: white;
+  color: #f5af19;
+}
+
+#scroll-up {
+  position:fixed;
+  background: black;
+  color: white;
+  border-radius: 50%;
+  height:3rem;
+  width:3rem;
+  bottom: 1rem;
+  right: 1rem;
+  display:grid;
+  place-items:center;
+}
+
+::-webkit-scrollbar {
+  width: .7rem;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #000;
+  border: 2px solid transparent;
+  border-radius: .5rem 0 0 .5rem;
+  background-clip: padding-box;  
+}
+
+::-webkit-scrollbar-track {
+  background: #fff;
 }

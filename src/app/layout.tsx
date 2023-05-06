@@ -2,7 +2,7 @@ import './globals.css'
 import LenisController from '@/components/LenisController'
 
 export const metadata = {
-  title: 'Nahuel Santillan',
+  title: 'Nahuel Santillan | Developer',
   description: 'Nahuel Santillan is a fullstack web developer based in Argentina.',
 }
 

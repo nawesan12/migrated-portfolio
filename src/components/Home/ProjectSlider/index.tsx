@@ -4,11 +4,12 @@ import './style.css'
 export default function ProjectSlider() {
   return (
     <section className="section" id="projects">
-      <section className="projects-gallery rounded">
+      <section className="projects-gallery rounded" title="Nahuel Santillan Projects">
         <header>
           <Image 
             src="/logo.webp" 
             alt="Nahuel Santillan"
+            title="Nahuel Santillan"
             height={64} 
             width={64} 
           />

@@ -4,12 +4,11 @@ export default function Jumbotron() {
   return (
     <section className="rounded section" id="home">
           <header>
-            <h1>Nahuel Santillan</h1>
+            <h1 title='Nahuel Santillan'>Nahuel Santillan | Developer</h1>
             <h2>Web Developer based in Argentina</h2>
-            <p>Soy un desarrollador fullstack y docente ubicado en Argentina</p>
-
-            
+            <p>I{`'`}m a fullstack developer and professor based in Argentina</p>            
           </header>
+          
           <main>
             <article className="rounded">
               <h3>Gorosito Studio Co.</h3>

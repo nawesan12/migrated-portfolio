@@ -1,3 +1,4 @@
+import CareerPath from "@/components/Global/CareerPath";
 import Footer from "@/components/Global/Footer";
 import Navigation from "@/components/Global/Navigation";
 import About from "@/components/Home/About";
@@ -14,6 +15,7 @@ export default function Home() {
       <About />
       <ProjectSlider />
       <ContactForm />
+      <CareerPath />
     </main>
     <Footer />
     </>

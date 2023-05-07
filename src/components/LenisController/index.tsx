@@ -3,14 +3,14 @@ import Lenis from "@studio-freight/lenis"
 import { useLayoutEffect } from "react"
 
 export default function LenisController({ children }: { children: React.ReactNode }) {
-  function raf(time: number) {
+  useLayoutEffect(() => { 
     const lenis: Lenis = new Lenis()
 
-    lenis.raf(time)
-    requestAnimationFrame(raf)
-  }
+    function raf(time: number) {  
+      lenis.raf(time)
+      requestAnimationFrame(raf)
+    }
 
-  useLayoutEffect(() => { 
     requestAnimationFrame(raf) 
     //eslint-disable-next-line
   }, []) 

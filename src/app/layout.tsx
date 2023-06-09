@@ -16,7 +16,7 @@ export default function RootLayout({
     <html lang="en">
       <body>
         <LenisController>
-          {children}
+          Currently building :P
         </LenisController>
       </body>
     </html>

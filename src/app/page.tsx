@@ -9,15 +9,7 @@ import ProjectSlider from "@/components/Home/ProjectSlider";
 export default function Home() {
   return (
     <>
-    <Navigation />
-    <main>
-      <Jumbotron />
-      <About />
-      <ProjectSlider />
-      <ContactForm />
-      <CareerPath />
-    </main>
-    <Footer />
+    I'm currently building this
     </>
   )
 }

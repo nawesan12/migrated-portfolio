@@ -31,10 +31,6 @@ html {
   scroll-behavior: initial;
 }
 
-body {
-  background: linear-gradient(to top, #ece9e6, #ffffff);
-}
-
 img::selection {
   background: none;
 }

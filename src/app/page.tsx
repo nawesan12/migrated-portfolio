@@ -9,7 +9,7 @@ import ProjectSlider from "@/components/Home/ProjectSlider";
 export default function Home() {
   return (
     <>
-    I'm currently building this
+    Todavia no hay nada por aca, pero algun dia si
     </>
   )
 }
